@@ -40,21 +40,41 @@
             <h5>Szobáinkat különböző árakkal kínáljuk!</h5>
             <div>
                 <p>Hány éjszakát tervez tartózkodni szállodánkba?</p>
-                <input type="number" min="1" id="ej" value="1" onclick="tart()">
+                <select id="ej" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
                 
             </div>
             <div>
                 <p>Hányan terveznek szállodánkba látogatni?</p>
-                <input type="number" min="1" id=fo value="1" onclick="lat()">
+                <select id="fo" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
             </div>
             <br>
             <div>
-                <input type="radio" name="sur" id="super">
-                <label for="Superiot szoba">Superior szoba (5000 Ft/éj)</label><br>
-                <input type="radio" name="sur" id="lak">
-                <label for="Superiot szoba">Lakosztály (10000 Ft/éj)</label><br>
-                <input type="radio" name="sur" id="csal">
-                <label for="Superiot szoba">Családi szoba (8000 Ft/éj)</label>
+                <input type="radio" name="sur" id="super" value="5000">
+                <label for="Superiot szoba" >Superior szoba (5000 Ft/éj)</label><br>
+                <input type="radio" name="sur" id="lak" value="10000">
+                <label for="Superiot szoba" >Lakosztály (10000 Ft/éj)</label><br>
+                <input type="radio" name="sur" id="csal" value="8000">
+                <label for="Superiot szoba" >Családi szoba (8000 Ft/éj)</label>
                 <h5>Az árak kiszámításához kattintson ide:</h5>
                 <input type="submit" onclick="fuggveny()">
                 <br>
